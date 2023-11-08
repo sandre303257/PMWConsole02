@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="PMWConsole02.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+    <title>PMW Console</title>
+    <link href="~/Content/Site.css" rel="stylesheet" /> 
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="content-wrapper">
+            <div class="header">
+                <h1>The Pump & Motor Works Web Console</h1>
+                <dx:ASPxMenu ID="HeaderMenu" runat="server" ItemAutoWidth="False" Width="100%">
+                   <items>
+                        <dx:MenuItem Text="Tasks" NavigateUrl="tasks.aspx"></dx:MenuItem>
+                        <dx:MenuItem Text="Attendance"  NavigateUrl="TimeClock.aspx"></dx:MenuItem>
+                       
+                    </items>
+                    <border borderwidth="0px" />
+                    <paddings padding="0px" />
+                </dx:ASPxMenu>
+            </div>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="footer">
+                <p>&copy; <%: DateTime.Now.Year %> - copyright by The Pump & Motor Works, Inc.</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="PMWConsole02.Global_asax" Language="VB" %>
