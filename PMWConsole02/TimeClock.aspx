@@ -2,15 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <br />
-    <b>Employee: </b><asp:DropDownList ID="DdlEmployees" AppendDataBoundItems="True" runat="server" DataSourceID="SdsHourlyEmployees" DataTextField="Name" DataValueField="ID" AutoPostBack="True" Height="33px" Width="208px">
+    <asp:DropDownList ID="DdlEmployees" AppendDataBoundItems="True" runat="server" DataSourceID="SdsHourlyEmployees" DataTextField="Name" DataValueField="ID" AutoPostBack="True" Height="33px" Width="208px">
          <asp:ListItem Text="---select---" Value="0" />
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="LblStandardClockInLabel" runat="server" Text="Ordinary Clock In Time: " Font-Bold="true"></asp:Label>
-    <asp:Label ID="LblStandardClockIn" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="LblStandardClockOutLabel" runat="server" Text="Ordinary Clock Out Time: " Font-Bold="true"></asp:Label>
-    <asp:Label ID="LblStandardClockOut" runat="server" Text="Label"></asp:Label>
+    
+
     
     
     <asp:Panel ID="PanelTimePunches" runat="server" Visible="true">
@@ -28,7 +24,7 @@
         <asp:Button ID="BtnClockOutLate" runat="server" Height="75px" Text="Late Clock Out" Width="130px" Font-Size="Smaller" />
         <br />
         <br />
-        <b>Select A Date to Review:</b>&nbsp;<dx:ASPxDateEdit ID="DatePicker" runat="server" AutoPostBack="True" Theme="Default" Height="33px" Width="208px">
+        &nbsp;<dx:ASPxDateEdit ID="DatePicker" runat="server" AutoPostBack="True" Theme="Default" Height="33px" Width="208px">
         </dx:ASPxDateEdit>
         <b>
         <br />
@@ -127,6 +123,11 @@
         <br />
         <br />
     </asp:Panel>
+    <asp:Label ID="LblStandardClockInLabel" runat="server" Text="Ordinary Clock In Time: " Font-Bold="true" Visible="false"></asp:Label>
+    <asp:Label ID="LblStandardClockIn" runat="server" Text="Label" Visible="false"></asp:Label><br />
+    <asp:Label ID="LblStandardClockOutLabel" runat="server" Text="Ordinary Clock Out Time: " Font-Bold="true" Visible="false"></asp:Label>
+    <asp:Label ID="LblStandardClockOut" runat="server" Text="Label" Visible="false"></asp:Label>
+
     <asp:SqlDataSource ID="SdsHourlyEmployees" runat="server" ConnectionString="<%$ ConnectionStrings:PMW_ConsoleConnectionString2 %>" ProviderName="<%$ ConnectionStrings:PMW_ConsoleConnectionString2.ProviderName %>" SelectCommand="SELECT ID, Name, `Email Address`, Pay_type, Active, last_name, first_name, ClockInTime, ClockOutTime FROM employees WHERE (Pay_type = 'Hourly') AND (Active = 1) ORDER BY last_name, first_name"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SdsTimePunches" runat="server" ConnectionString="<%$ ConnectionStrings:PMW_ConsoleConnectionString2 %>" ProviderName="<%$ ConnectionStrings:PMW_ConsoleConnectionString2.ProviderName %>" 
         SelectCommand="SELECT ID, clock_in_1, clock_out_1, employee_ID, sick, vacation, holiday, lunch, correction_hours, date_worked, 

@@ -23,42 +23,6 @@ Partial Public Class TimeClock
     Protected WithEvents DdlEmployees As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''LblStandardClockInLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblStandardClockInLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''LblStandardClockIn control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblStandardClockIn As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''LblStandardClockOutLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblStandardClockOutLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''LblStandardClockOut control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblStandardClockOut As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''PanelTimePunches control.
     '''</summary>
     '''<remarks>
@@ -156,6 +120,42 @@ Partial Public Class TimeClock
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GridTimePunches As Global.DevExpress.Web.ASPxGridView
+
+    '''<summary>
+    '''LblStandardClockInLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblStandardClockInLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblStandardClockIn control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblStandardClockIn As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblStandardClockOutLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblStandardClockOutLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblStandardClockOut control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblStandardClockOut As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''SdsHourlyEmployees control.
